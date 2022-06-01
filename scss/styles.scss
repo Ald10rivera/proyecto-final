@@ -1,0 +1,71 @@
+@import "./partials/reset";
+@import "./partials/variables";
+@import "./partials/header";
+@import "./partials/footer";
+
+section{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    h1{
+        font-size: 80px;
+    }
+    h1{
+        animation-duration: 5s;
+        animation-name: salir;
+        animation-iteration-count: 1;
+        @keyframes salir{
+            0%{
+                opacity:0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+    p{
+        margin: 2rem;
+        font-family: 'Anton', sans-serif;
+    }
+}
+.principal{
+    margin: 2rem;
+    display:grid;
+    grid-template-areas:"div1 div2"
+                        "div3 div4";
+    justify-content: center;
+    gap:25px;
+
+    .div1{
+        grid-area: div1;
+        text-align: center;
+    }
+    .div2{
+        grid-area: div2;
+        text-align: center;
+    }
+    .div3{
+        grid-area: div3;
+        text-align: center;
+    }
+    .div4{
+        grid-area: div4;
+        text-align: center;
+    }
+    div:hover{
+        background-color: #1C6999;
+        transition: background-color 1s;
+        transform: scale(1.1);
+        color:whitesmoke
+    }
+    p{
+            font-family:  'Anton', sans-serif;
+        padding: 10px;
+        }
+        img{
+            height: $medida-standard;
+            width: 600px;
+            border: solid 3px;
+            border-color:$color-secundario
+        }
+
+}

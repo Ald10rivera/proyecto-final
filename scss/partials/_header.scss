@@ -1,0 +1,33 @@
+nav ul{
+    font-family:  'Anton', sans-serif;
+    background-color: $color-secundario;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+    li{
+        display: inline-block;
+        color: whitesmoke;
+        font-size: 25px;
+        margin: 10px;
+        position: relative;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+            ul{
+                display: none;
+                position: absolute;
+                color: whitesmoke;
+                    .sub-menu{
+                        background-color: whitesmoke;
+                        padding: 10px;
+                        
+                    }
+            }
+
+    }
+
+}
